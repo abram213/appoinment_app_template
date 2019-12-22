@@ -32,13 +32,13 @@
   </v-tabs>
   <v-tabs-items v-model="tab">
       <v-tab-item>
-        <CompaniesList/>
+        <MeetingsList/>
       </v-tab-item>
       <v-tab-item>
-        <MembersList/>
+        <MeetingsList/>
       </v-tab-item>
       <v-tab-item>
-        <MembersList/>
+        <MeetingsList/>
       </v-tab-item>
     </v-tabs-items>
 </v-container>
@@ -46,8 +46,7 @@
 
 <script>
 import AppBar from '@/components/AppBar'
-import CompaniesList from '@/components/lists/CompaniesList'
-import MembersList from '@/components/lists/MembersList'
+import MeetingsList from '@/components/lists/MeetingsList'
 export default {
   data () {
     return {
@@ -59,8 +58,7 @@ export default {
 
   },
   components: {
-    CompaniesList,
-    MembersList,
+    MeetingsList,
     AppBar
   }
 }

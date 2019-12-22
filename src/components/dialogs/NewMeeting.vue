@@ -100,7 +100,7 @@
               <v-text-field
                 v-model="time"
                 label="Время"
-                prepend-icon="access_time"
+                prepend-icon="mdi-clock"
                 readonly
                 v-on="on"
               ></v-text-field>

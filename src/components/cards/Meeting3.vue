@@ -3,8 +3,6 @@
     v-if="meeting"
     tile
     flat
-    :style="{ borderColor: meeting.borderColor }"
-    style="border-left: 5px solid;"
     class="mb-1"
   >
     <v-list-item three-line>
@@ -13,9 +11,6 @@
         <v-list-item-title class="title mb-1">{{ meeting.person }}</v-list-item-title>
         <v-list-item-subtitle>{{ meeting.company }}</v-list-item-subtitle>
       </v-list-item-content>
-      <!-- <v-list-item-action class="mt-2">
-          <v-list-item-action-text>{{ meeting.time }}</v-list-item-action-text>
-      </v-list-item-action> -->
     </v-list-item>
     <v-list-item three-line>
       <v-list-item-content class="pt-0">
@@ -32,8 +27,9 @@
           {{ meeting.place }}
         </div>
       </v-list-item-content>
-      <v-list-item-action class="mb-0 mt-12">
-        <v-btn rounded depressed small color="error">Отменить</v-btn>
+      <v-list-item-action class="mb-0" :style="{ 'align-items': 'center' }">
+        <v-btn rounded depressed small color="success" class="my-1" width="100%">Принять</v-btn>
+        <v-btn rounded text small color="error" class="my-1">Отменить</v-btn>
       </v-list-item-action>
     </v-list-item>
     <!-- <v-card-text class="pt-0">

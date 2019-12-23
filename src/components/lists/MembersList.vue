@@ -12,7 +12,7 @@
       </v-list-item-content>
 
       <v-list-item-action>
-        <v-btn icon @click.stop="item.star = !item.star">
+        <v-btn class="unactive" retain-focus-on-click icon @click.stop="item.star = !item.star">
           <v-icon
             :color="item.star ? 'yellow darken-2' : 'grey darken-4'"
             v-html="item.star ? 'mdi-star' : 'mdi-star-outline'"
@@ -44,3 +44,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .unactive:focus::before {
+    opacity: 0 !important;
+  }
+</style>

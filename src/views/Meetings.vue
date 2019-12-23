@@ -35,10 +35,10 @@
         <MeetingsList/>
       </v-tab-item>
       <v-tab-item>
-        <MeetingsList/>
+        <MeetingsList2/>
       </v-tab-item>
       <v-tab-item>
-        <MeetingsList/>
+        <MeetingsList3/>
       </v-tab-item>
     </v-tabs-items>
 </v-container>
@@ -47,6 +47,8 @@
 <script>
 import AppBar from '@/components/AppBar'
 import MeetingsList from '@/components/lists/MeetingsList'
+import MeetingsList2 from '@/components/lists/MeetingsList2'
+import MeetingsList3 from '@/components/lists/MeetingsList3'
 export default {
   data () {
     return {
@@ -59,6 +61,8 @@ export default {
   },
   components: {
     MeetingsList,
+    MeetingsList2,
+    MeetingsList3,
     AppBar
   }
 }

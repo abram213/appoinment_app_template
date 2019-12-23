@@ -4,7 +4,6 @@
       v-for="(item, index) in companies"
       :key="index"
       v-on:click.stop="$router.push({ name: 'company' })"
-      style="border-left: 5px solid; border-color: #F44336;"
     >
       <v-list-item-avatar :color="item.color">
         <span :class="[item.avatarClass]">{{ item.title[0] }}</span>

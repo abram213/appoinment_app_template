@@ -1,6 +1,5 @@
 let storage = {
-  // host: 'http://dropiteasy.ru',
-  version: '1.0.4',
+  version: '1.0.0',
   host: 'http://localhost:4545'
 }
 

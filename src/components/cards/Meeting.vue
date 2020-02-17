@@ -3,14 +3,18 @@
     v-if="meeting"
     tile
     flat
-    :style="{ borderColor: meeting.borderColor }"
-    style="border-left: 5px solid;"
+    :style="{ borderLeft: meeting.approved ? '5px solid' : '', borderColor: meeting.expired ? '#F44336' : '#4CAF50' }"
     class="mb-1"
   >
     <v-list-item three-line>
       <v-list-item-content>
         <div class="overline mb-2">{{ meeting.title }}</div>
-        <v-list-item-title class="title mb-1">{{ meeting.person }}</v-list-item-title>
+        <v-list-item-title class="title mb-1">
+          {{ meeting.person }}
+          <v-btn icon v-on:click.stop="$router.push({ name: 'member' })">
+            <v-icon>mdi-account</v-icon>
+          </v-btn>
+        </v-list-item-title>
         <v-list-item-subtitle>{{ meeting.company }}</v-list-item-subtitle>
       </v-list-item-content>
       <!-- <v-list-item-action class="mt-2">
@@ -32,8 +36,31 @@
           {{ meeting.place }}
         </div>
       </v-list-item-content>
-      <v-list-item-action class="mb-0 mt-12">
-        <v-btn rounded depressed small color="error">Отменить</v-btn>
+      <v-list-item-action
+        class="mb-0"
+        :class="{ 'mt-12' : meeting.approved }"
+        :style="{ 'align-items': 'center' }"
+      >
+        <v-btn
+          v-show="!meeting.approved"
+          rounded
+          depressed
+          small
+          color="success"
+          class="my-1"
+          width="100%"
+          @click="meeting.approved = true"
+        >Принять</v-btn>
+        <v-btn
+          :disabled="meeting.expired"
+          rounded
+          text
+          small
+          color="error"
+          class="my-1"
+          width="100%"
+          @click="meeting.approved = false"
+        >Отменить</v-btn>
       </v-list-item-action>
     </v-list-item>
     <!-- <v-card-text class="pt-0">

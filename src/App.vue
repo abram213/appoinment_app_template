@@ -8,6 +8,7 @@
       app
       dark
       grow
+      height="44"
       :value="nowRouteName"
     >
       <v-btn

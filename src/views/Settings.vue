@@ -41,7 +41,7 @@ export default {
     listItems: [
       { icon: 'mdi-account', text: 'Profile', routeName: 'profile' },
       { icon: 'mdi-home', text: 'Company', routeName: 'settings_company' },
-      { icon: 'mdi-settings', text: 'Main', routeName: 'settings_main' },
+      { icon: 'mdi-tune', text: 'Main', routeName: 'settings_main' },
       { icon: 'mdi-bell', text: 'Notifications', routeName: 'settings_notifications' }
     ]
   }),

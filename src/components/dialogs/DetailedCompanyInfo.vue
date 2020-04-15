@@ -2,12 +2,12 @@
     <v-dialog v-model="dialog" fullscreen hide-overlay transition="dialog-bottom-transition">
       <template v-slot:activator="{ on }">
         <v-list-item v-on="on">
-        <v-list-item-icon class="mr-3">
-            <v-icon color="blue">mdi-information</v-icon>
-        </v-list-item-icon>
-        <v-list-item-content>
-            <v-list-item-subtitle>Подробная информация</v-list-item-subtitle>
-        </v-list-item-content>
+          <v-list-item-icon class="mr-3">
+              <v-icon color="blue">mdi-information</v-icon>
+          </v-list-item-icon>
+          <v-list-item-content>
+              <v-list-item-subtitle><b>Подробная информация</b></v-list-item-subtitle>
+          </v-list-item-content>
         </v-list-item>
       </template>
       <v-card>

@@ -1,5 +1,6 @@
 <template>
-  <v-list class="pt-0">
+  <v-list>
+    <v-subheader class="subtitle-1">Сотрудники</v-subheader>
     <template v-for="(item, index) in members">
       <v-divider v-if="index === 0" :key="index"></v-divider>
       <v-list-item
@@ -25,7 +26,7 @@
           </v-btn>
         </v-list-item-action>
       </v-list-item>
-      <v-divider v-if="index < members.length-1" :key="index"></v-divider>
+      <v-divider v-if="index < members.length-1" :key="index" inset></v-divider>
     </template>
   </v-list>
 </template>

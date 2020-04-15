@@ -33,8 +33,7 @@ export default {
         { name: 'Companies', icon: 'mdi-rocket', routeName: 'companies' },
         { name: 'Favorite', icon: 'mdi-star', routeName: 'favorite' },
         { name: 'Meetings', icon: 'mdi-clipboard-outline', routeName: 'meetings' },
-        /* { name: 'Custom', icon: 'mdi-cube-outline', routeName: 'custom' }, */
-        { name: 'Settings', icon: 'mdi-settings', routeName: 'settings' }
+        { name: 'Settings', icon: 'mdi-cog-outline', routeName: 'settings' }
       ]
     }
   },

@@ -8,6 +8,26 @@
         </template>
     </AppBar>
     <v-card tile flat color="transparent">
+        <v-col align="center" xs="12" cols="auto">
+            <v-hover>
+                <template v-slot:default="{ hover }">
+                    <v-avatar size="160">
+                        <v-img :src="'https://cdn.vuetifyjs.com/images/cards/server-room.jpg'"></v-img>
+                        <v-fade-transition>
+                            <v-overlay
+                                v-if="hover"
+                                absolute
+                                color="#212121"
+                            >
+                                <v-btn icon width="70" height="70">
+                                    <v-icon size="70" >mdi-upload</v-icon>
+                                </v-btn>
+                            </v-overlay>
+                        </v-fade-transition>
+                    </v-avatar>
+                </template>
+            </v-hover>
+        </v-col>
         <v-card-title class="title font-weight-regular">
             <v-icon left>mdi-account-box</v-icon>
             <span>Персональная информация</span>

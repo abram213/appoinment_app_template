@@ -21,13 +21,13 @@
     </v-card>
     <MainCompanyInfo/>
     <v-divider></v-divider>
-    <MembersList class="pt-0"/>
+    <StaffList class="pt-0"/>
   </v-container>
 </template>
 
 <script>
 import AppBar from '@/components/AppBar'
-import MembersList from '@/components/lists/MembersList'
+import StaffList from '@/components/lists/StaffList'
 import MainCompanyInfo from '@/components/lists/MainCompanyInfo'
 export default {
   data () {
@@ -41,7 +41,7 @@ export default {
     }
   },
   components: {
-    MembersList,
+    StaffList,
     MainCompanyInfo,
     AppBar
   }

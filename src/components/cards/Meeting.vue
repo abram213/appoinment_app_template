@@ -50,7 +50,7 @@
           class="my-1"
           width="100%"
           @click="meeting.approved = true"
-        >Принять</v-btn>
+        >Approve</v-btn>
         <v-btn
           :disabled="meeting.expired"
           rounded
@@ -60,19 +60,9 @@
           class="my-1"
           width="100%"
           @click="meeting.approved = false"
-        >Отменить</v-btn>
+        >Cancel</v-btn>
       </v-list-item-action>
     </v-list-item>
-    <!-- <v-card-text class="pt-0">
-        <div>
-            <v-icon left>mdi-calendar</v-icon>
-            <span>{{ meeting.date }}</span>
-        </div>
-        <div>
-            <v-icon left>mdi-map-marker</v-icon>
-            <span>{{ meeting.place }}</span>
-        </div>
-    </v-card-text> -->
     <v-divider></v-divider>
   </v-card>
 </template>

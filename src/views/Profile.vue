@@ -30,20 +30,20 @@
         </v-col>
         <v-card-title class="title font-weight-regular">
             <v-icon left>mdi-account-box</v-icon>
-            <span>Персональная информация</span>
+            <span>Personal info</span>
         </v-card-title>
         <v-card-text class="pb-0">
             <v-text-field
                 filled
-                label="Имя"
+                label="Name"
             ></v-text-field>
             <v-text-field
                 filled
-                label="Фамилия"
+                label="Surname"
             ></v-text-field>
             <v-text-field
                 filled
-                label="Телефон"
+                label="Phone"
             ></v-text-field>
             <v-text-field
                 filled
@@ -51,44 +51,44 @@
             ></v-text-field>
             <v-text-field
                 filled
-                label="Город"
+                label="City"
             ></v-text-field>
         </v-card-text>
         <v-card-title class="title font-weight-regular pt-0">
             <v-icon left>mdi-bank</v-icon>
-            <span>Работа</span>
+            <span>Work</span>
         </v-card-title>
         <v-card-text class="pb-0">
             <v-text-field
                 filled
-                label="Компания"
+                label="Company"
             ></v-text-field>
             <v-text-field
                 filled
-                label="Должность"
+                label="Job"
             ></v-text-field>
         </v-card-text>
         <v-card-title class="title font-weight-regular pt-0">
             <v-icon left>mdi-human</v-icon>
-            <span>Интересы</span>
+            <span>Interests</span>
         </v-card-title>
         <v-card-text class="pb-0">
             <v-text-field
                 filled
-                label="Я ищу"
+                label="I watch"
             ></v-text-field>
             <v-text-field
                 filled
-                label="Я полезен"
+                label="I useful"
             ></v-text-field>
             <v-text-field
                 filled
-                label="О себе"
+                label="About me"
             ></v-text-field>
         </v-card-text>
         <v-card-title class="title font-weight-regular pt-0">
             <v-icon left>mdi-web</v-icon>
-            <span>Соцсети</span>
+            <span>Social</span>
         </v-card-title>
         <v-card-text>
             <v-text-field

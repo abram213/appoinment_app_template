@@ -22,10 +22,10 @@
           </template>
           <v-list class="py-0">
             <v-list-item @click="">
-              <v-list-item-title>Редактировать</v-list-item-title>
+              <v-list-item-title>Edit</v-list-item-title>
             </v-list-item>
             <v-list-item @click="">
-              <v-list-item-title class="red--text">Отменить</v-list-item-title>
+              <v-list-item-title class="red--text">Cancel</v-list-item-title>
             </v-list-item>
           </v-list>
         </v-menu>
@@ -47,16 +47,6 @@
         </div>
       </v-list-item-content>
     </v-list-item>
-    <!-- <v-card-text class="pt-0">
-        <div>
-            <v-icon left>mdi-calendar</v-icon>
-            <span>{{ meeting.date }}</span>
-        </div>
-        <div>
-            <v-icon left>mdi-map-marker</v-icon>
-            <span>{{ meeting.place }}</span>
-        </div>
-    </v-card-text> -->
     <v-divider></v-divider>
   </v-card>
 </template>

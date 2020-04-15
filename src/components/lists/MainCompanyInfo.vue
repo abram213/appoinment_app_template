@@ -5,7 +5,7 @@
         <v-icon>mdi-package-variant</v-icon>
       </v-list-item-icon>
       <v-list-item-content>
-        <v-list-item-subtitle>Продукт: {{ company.product }}</v-list-item-subtitle>
+        <v-list-item-subtitle>Product: {{ company.product }}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
     <v-list-item>
@@ -13,7 +13,7 @@
         <v-icon>mdi-account-multiple</v-icon>
       </v-list-item-icon>
       <v-list-item-content>
-        <v-list-item-subtitle>Количество сотрудников: {{ company.members }}</v-list-item-subtitle>
+        <v-list-item-subtitle>Staff: {{ company.members }}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
     <v-list-item>
@@ -21,7 +21,7 @@
         <v-icon>mdi-order-bool-descending</v-icon>
       </v-list-item-icon>
       <v-list-item-content>
-        <v-list-item-subtitle>Описание: {{ company.description }}</v-list-item-subtitle>
+        <v-list-item-subtitle>Description: {{ company.description }}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
       <DetailedCompanyInfo/>

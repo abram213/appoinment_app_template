@@ -43,7 +43,7 @@
         </v-card-actions>
         <v-card-text class="py-0">
             <span class="caption grey--text text--darken-1">
-                Don`t have account? <router-link to="/registration">Registration</router-link>
+                Don`t have account? <router-link to="/">Registration</router-link>
             </span>
         </v-card-text>
         </v-form>
@@ -66,33 +66,9 @@ export default {
   },
   methods: {
     tryLogin () {
-      if (this.valid) {
+      if (this.$refs.login_form.validate()) {
         const { username, password } = this
-        this.authState = 'loading'
-        this.$store.dispatch('login', { username, password }).then((resp) => {
-          this.$router.push('/')
-          this.authState = 'ok'
-        })
-          .catch((err) => {
-            console.log(err.response.data)
-            /* if (err.response) {
-              Swal.fire({
-                position: 'top-end',
-                type: 'error',
-                text: err.response.data
-              })
-            } else {
-              Swal.fire({
-                position: 'top-end',
-                type: 'error',
-                text: 'Неизвестная ошибка!'
-              })
-            } */
-            this.authState = 'error'
-          })
-      } else {
-        this.authState = 'unvalid'
-        this.$refs.login_form.validate()
+        //request to backend
       }
     }
   }

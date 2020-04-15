@@ -8,7 +8,7 @@
       <NewMeeting v-on:emit_meeting="enableMeeting"/>
     </v-card-actions>
     <v-card-actions v-else class="py-0 pr-0">
-      <span class="title ml-2 green--text">Встреча назначена</span>
+      <span class="title ml-2 green--text">Meeting approved</span>
       <v-spacer></v-spacer>
       <v-divider vertical></v-divider>
       <v-btn icon tile @click="panel = !panel">
@@ -55,7 +55,7 @@
             <v-icon color="red darken-2">mdi-close</v-icon>
           </v-list-item-action>
           <v-list-item-content>
-            <v-list-item-title>Отменить встречу</v-list-item-title>
+            <v-list-item-title>Cancel meeting</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
       </v-list>

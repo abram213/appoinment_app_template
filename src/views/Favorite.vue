@@ -18,10 +18,10 @@
     grow
   >
     <v-tab>
-      Компании
+      Companies
     </v-tab>
     <v-tab>
-      Участники
+      Members
     </v-tab>
   </v-tabs>
   <v-tabs-items v-model="tab">

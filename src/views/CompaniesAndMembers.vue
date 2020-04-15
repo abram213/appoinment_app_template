@@ -6,10 +6,10 @@
     grow
   >
     <v-tab>
-      Компании
+      Companies
     </v-tab>
     <v-tab>
-      Участники
+      Users
     </v-tab>
   </v-tabs>
   <v-tabs-items v-model="tab">

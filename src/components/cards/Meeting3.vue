@@ -28,8 +28,7 @@
         </div>
       </v-list-item-content>
       <v-list-item-action class="mb-0" :style="{ 'align-items': 'center' }">
-        <!-- <v-btn rounded depressed small color="success" class="my-1" width="100%">Принять</v-btn> -->
-        <v-btn rounded text small color="error" class="my-1">Отменить</v-btn>
+        <v-btn rounded text small color="error" class="my-1">Cancel</v-btn>
       </v-list-item-action>
     </v-list-item>
     <!-- <v-card-text class="pt-0">

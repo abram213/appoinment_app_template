@@ -2,7 +2,6 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
 import storage from './storage.js'
-import auth from './modules/auth'
 
 Vue.use(Vuex)
 
@@ -28,29 +27,26 @@ export default new Vuex.Store({
   actions: {
     getApprovedMeetings ({ commit }) {
       let meetings = [
-        { id: 1, title: 'Договориться о сотрудничестве', person: 'Иванов Иван', company: 'Yandex', time: '13:30', date: '13 января 2019', place: 'Санкт-Петербург', approved: true, expired: false },
-        { id: 2, title: 'Наладить общение', person: 'Иванов Петр', company: 'Mail', time: '14:30', date: '13 января 2019', place: 'Санкт-Петербург', approved: true, expired: false },
-        { id: 3, title: 'Договориться о поставке товара', person: 'Абрамович Михаил', company: 'Rambler', time: '16:00', date: '12 января 2019', place: 'Санкт-Петербург', approved: true, expired: true }
+        { id: 1, title: 'Agree on cooperation', person: 'Ivanov Ivan', company: 'Yandex', time: '13:30', date: '13 january 2019', place: 'Saint-Petersburg', approved: true, expired: false },
+        { id: 2, title: 'Establish communication', person: 'Ivanov Ivan', company: 'Mail', time: '14:30', date: '13 january 2019', place: 'Saint-Petersburg', approved: true, expired: false },
+        { id: 3, title: 'Agree on the delivery of goods', person: 'Ivanov Ivan', company: 'Rambler', time: '16:00', date: '12 january 2019', place: 'Saint-Petersburg', approved: true, expired: true }
       ]
       commit('GET_APPROVED_MEETINGS', meetings)
     },
     getUnconfirmedMeetings ({ commit }) {
       let meetings = [
-        { id: 4, title: 'Договориться о поставке товара', person: 'Абрамович Михаил', company: 'Rambler', time: '16:00', date: '13 января 2019', place: 'Санкт-Петербург', approved: false, expired: false },
-        { id: 5, title: 'Составить акт о доставке', person: 'Николаенко Николай', company: 'Nginx', time: '17:30', date: '13 января 2019', place: 'Санкт-Петербург', approved: false, expired: false },
-        { id: 6, title: 'Договориться о сотрудничестве', person: 'Иванов Егор', company: 'Apple', time: '19:00', date: '13 января 2019', place: 'Санкт-Петербург', approved: false, expired: false }
+        { id: 4, title: 'Agree on the delivery of goods', person: 'Ivanov Ivan', company: 'Rambler', time: '16:00', date: '13 january 2019', place: 'Saint-Petersburg', approved: false, expired: false },
+        { id: 5, title: 'Draw up a delivery certificate', person: 'Ivanov Ivan', company: 'Nginx', time: '17:30', date: '13 january 2019', place: 'Saint-Petersburg', approved: false, expired: false },
+        { id: 6, title: 'Agree on cooperation', person: 'Ivanov Ivan', company: 'Apple', time: '19:00', date: '13 january 2019', place: 'Saint-Petersburg', approved: false, expired: false }
       ]
       commit('GET_UNCONFIRMED_MEETINGS', meetings)
     },
     getAppointmentMeetings ({ commit }) {
       let meetings = [
-        { id: 7, title: 'Договориться о сотрудничестве', person: 'Гурбатов Петр', company: 'Uber', time: '12:30', date: '13 января 2019', place: 'Санкт-Петербург', approved: false, expired: false },
-        { id: 8, title: 'Договориться о сотрудничестве', person: 'Замулин Алексей', company: 'Microsoft', time: '14:00', date: '13 января 2019', place: 'Санкт-Петербург', approved: false, expired: false }
+        { id: 7, title: 'Agree on cooperation', person: 'Ivanov Ivan', company: 'Uber', time: '12:30', date: '13 january 2019', place: 'Saint-Petersburg', approved: false, expired: false },
+        { id: 8, title: 'Agree on cooperation', person: 'Ivanov Ivan', company: 'Microsoft', time: '14:00', date: '13 january 2019', place: 'Saint-Petersburg', approved: false, expired: false }
       ]
       commit('GET_APPOINTMENT_MEETINGS', meetings)
     }
-  },
-  modules: {
-    auth
   }
 })

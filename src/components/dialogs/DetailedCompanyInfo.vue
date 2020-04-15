@@ -6,7 +6,7 @@
               <v-icon color="blue">mdi-information</v-icon>
           </v-list-item-icon>
           <v-list-item-content>
-              <v-list-item-subtitle><b>Подробная информация</b></v-list-item-subtitle>
+              <v-list-item-subtitle><b>Detailed information</b></v-list-item-subtitle>
           </v-list-item-content>
         </v-list-item>
       </template>
@@ -15,7 +15,7 @@
           <v-btn icon dark @click="dialog = false">
             <v-icon>mdi-keyboard-backspace</v-icon>
           </v-btn>
-          <v-toolbar-title>Подробная информация</v-toolbar-title>
+          <v-toolbar-title>Detailed information</v-toolbar-title>
           <!-- <v-spacer></v-spacer>
           <v-toolbar-items>
             <v-btn dark text @click="dialog = false">Save</v-btn>

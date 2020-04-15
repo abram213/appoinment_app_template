@@ -18,7 +18,6 @@
         :value="btn.routeName"
         v-on:click.stop="$router.push({ name: btn.routeName })"
       >
-        <!-- <span>{{ btn.name }}</span> -->
         <v-icon>{{ btn.icon }}</v-icon>
       </v-btn>
     </v-bottom-navigation>

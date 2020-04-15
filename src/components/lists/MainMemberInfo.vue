@@ -5,7 +5,7 @@
         <v-icon>mdi-domain</v-icon>
       </v-list-item-icon>
       <v-list-item-content>
-        <v-list-item-subtitle>Компания: {{ member.company }}</v-list-item-subtitle>
+        <v-list-item-subtitle>Company: {{ member.company }}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
     <v-list-item>
@@ -13,7 +13,7 @@
         <v-icon>mdi-newspaper-variant-outline</v-icon>
       </v-list-item-icon>
       <v-list-item-content>
-        <v-list-item-subtitle>Должность: {{ member.job }}</v-list-item-subtitle>
+        <v-list-item-subtitle>Job: {{ member.job }}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
     <DetailedMemberInfo/>
@@ -26,8 +26,8 @@ export default {
   data () {
     return {
       member: {
-        name: 'Misha',
-        surname: 'Abramovich',
+        name: 'Ivan',
+        surname: 'Ivanov',
         company: 'Test company',
         job: 'Boss'
       }

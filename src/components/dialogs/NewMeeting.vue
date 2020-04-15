@@ -8,21 +8,21 @@
           block
           tile
           color="green lighten-1"
-        >Назначить встречу</v-btn>
+        >Make appointment</v-btn>
       </template>
       <v-card>
         <v-toolbar dark dense>
           <v-btn icon dark @click="dialog = false">
             <v-icon>mdi-close</v-icon>
           </v-btn>
-          <v-toolbar-title>Новая встреча</v-toolbar-title>
+          <v-toolbar-title>New appointment</v-toolbar-title>
           <!-- <v-spacer></v-spacer>
           <v-toolbar-items>
             <v-btn dark text @click="dialog = false">Save</v-btn>
           </v-toolbar-items> -->
         </v-toolbar>
         <v-card-title class="subtitle-1 py-2">
-          Выбрать место
+          Choose place
         </v-card-title>
         <v-divider></v-divider>
         <v-card-text>
@@ -33,37 +33,14 @@
         >
           <v-select
               :items="items"
-              label="Место встречи"
+              label="Meeting place"
               prepend-icon="mdi-map-marker-radius"
             ></v-select>
         </v-form>
 
-        <!-- <v-list three-line subheader>
-          <v-subheader>Выбрать место</v-subheader>
-          <v-divider></v-divider>
-          <v-list-item>
-            <v-list-item-content>
-              <v-select
-                :items="items"
-                label="Standard"
-              ></v-select>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list>
-        <v-divider></v-divider>
-        <v-list three-line subheader>
-          <v-subheader>Выбрать время встречи</v-subheader>
-          <v-divider></v-divider>
-          <v-list-item>
-            <v-list-item-content>
-              <v-list-item-title>Auto-add widgets</v-list-item-title>
-              <v-list-item-subtitle>Automatically add home screen widgets</v-list-item-subtitle>
-            </v-list-item-content>
-          </v-list-item>
-        </v-list> -->
         </v-card-text>
         <v-card-title class="subtitle-1 py-2">
-          Выбрать дату и время
+          Choose date and time
         </v-card-title>
         <v-divider></v-divider>
         <v-card-text>
@@ -77,7 +54,7 @@
             <template v-slot:activator="{ on }">
               <v-text-field
                 v-model="date"
-                label="Дата"
+                label="Date"
                 prepend-icon="mdi-calendar"
                 readonly
                 v-on="on"
@@ -85,8 +62,8 @@
             </template>
             <v-date-picker v-model="date" scrollable>
               <v-spacer></v-spacer>
-              <v-btn text color="primary" @click="modal = false">Отмена</v-btn>
-              <v-btn text color="primary" @click="$refs.date.save(date)">Выбрать</v-btn>
+              <v-btn text color="primary" @click="modal = false">Cancel</v-btn>
+              <v-btn text color="primary" @click="$refs.date.save(date)">Ok</v-btn>
             </v-date-picker>
           </v-dialog>
           <v-dialog
@@ -99,7 +76,7 @@
             <template v-slot:activator="{ on }">
               <v-text-field
                 v-model="time"
-                label="Время"
+                label="Time"
                 prepend-icon="mdi-clock"
                 readonly
                 v-on="on"
@@ -113,8 +90,8 @@
               format="24hr"
             >
               <v-spacer></v-spacer>
-              <v-btn text color="primary" @click="modal2 = false">Отмена</v-btn>
-              <v-btn text color="primary" @click="$refs.time.save(time)">Выбрать</v-btn>
+              <v-btn text color="primary" @click="modal2 = false">Cancel</v-btn>
+              <v-btn text color="primary" @click="$refs.time.save(time)">Ok</v-btn>
             </v-time-picker>
           </v-dialog>
         </v-card-text>
@@ -125,7 +102,7 @@
           color="success"
           @click="$emit('emit_meeting')"
         >
-          Назначить
+          Appoint
         </v-btn>
         </v-card-actions>
       </v-card>

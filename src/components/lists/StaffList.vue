@@ -1,6 +1,6 @@
 <template>
   <v-list>
-    <v-subheader class="subtitle-1">Сотрудники</v-subheader>
+    <v-subheader class="subtitle-1">Staff</v-subheader>
     <template v-for="(item, index) in members">
       <v-divider v-if="index === 0" :key="index"></v-divider>
       <v-list-item
@@ -36,17 +36,17 @@ export default {
   data () {
     return {
       members: [
-        { avatarClass: 'white--text', name: 'Misha', surname: 'Abramovich', color: 'red', star: true },
-        { avatarClass: 'white--text', name: 'Misha', surname: 'Abramovich', color: 'purple', star: true },
-        { avatarClass: 'white--text', name: 'Misha', surname: 'Abramovich', color: 'indigo', star: true },
-        { avatarClass: 'white--text', name: 'Misha', surname: 'Abramovich', color: 'blue', star: true },
-        { avatarClass: 'white--text', name: 'Misha', surname: 'Abramovich', color: 'teal', star: false },
-        { avatarClass: 'white--text', name: 'Misha', surname: 'Abramovich', color: 'green', star: true },
-        { avatarClass: 'white--text', name: 'Misha', surname: 'Abramovich', color: 'orange', star: false },
-        { avatarClass: 'white--text', name: 'Misha', surname: 'Abramovich', color: 'brown', star: true },
-        { avatarClass: 'white--text', name: 'Misha', surname: 'Abramovich', color: 'blue-grey', star: false },
-        { avatarClass: 'white--text', name: 'Misha', surname: 'Abramovich', color: 'deep-orange darken-3', star: false },
-        { avatarClass: 'white--text', name: 'Misha', surname: 'Abramovich', color: 'light-green darken-4', star: false }
+        { avatarClass: 'white--text', name: 'Ivan', surname: 'Ivanov', color: 'red', star: true },
+        { avatarClass: 'white--text', name: 'Ivan', surname: 'Ivanov', color: 'purple', star: true },
+        { avatarClass: 'white--text', name: 'Ivan', surname: 'Ivanov', color: 'indigo', star: true },
+        { avatarClass: 'white--text', name: 'Ivan', surname: 'Ivanov', color: 'blue', star: true },
+        { avatarClass: 'white--text', name: 'Ivan', surname: 'Ivanov', color: 'teal', star: false },
+        { avatarClass: 'white--text', name: 'Ivan', surname: 'Ivanov', color: 'green', star: true },
+        { avatarClass: 'white--text', name: 'Ivan', surname: 'Ivanov', color: 'orange', star: false },
+        { avatarClass: 'white--text', name: 'Ivan', surname: 'Ivanov', color: 'brown', star: true },
+        { avatarClass: 'white--text', name: 'Ivan', surname: 'Ivanov', color: 'blue-grey', star: false },
+        { avatarClass: 'white--text', name: 'Ivan', surname: 'Ivanov', color: 'deep-orange darken-3', star: false },
+        { avatarClass: 'white--text', name: 'Ivan', surname: 'Ivanov', color: 'light-green darken-4', star: false }
       ]
     }
   }
